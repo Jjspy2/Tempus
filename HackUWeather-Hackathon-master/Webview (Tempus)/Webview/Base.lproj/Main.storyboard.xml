@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Webview" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P7K-Dq-foO">
+                                <frame key="frameInset" minY="20" width="1366" height="1004"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="P7K-Dq-foO" secondAttribute="height" multiplier="375:667" id="fvt-U4-243"/>
+                                </constraints>
+                            </webView>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nhW-bN-fXB">
+                                <frame key="frameInset" width="375" height="637"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nhW-bN-fXB" secondAttribute="height" multiplier="375:667" id="0h9-Wc-lwM"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="P7K-Dq-foO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="GzG-iy-Aj8"/>
+                            <constraint firstItem="P7K-Dq-foO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I2I-wb-8X9"/>
+                            <constraint firstItem="nhW-bN-fXB" firstAttribute="width" secondItem="nhW-bN-fXB" secondAttribute="height" multiplier="375:667" id="JsE-VN-jS5"/>
+                            <constraint firstItem="P7K-Dq-foO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TeR-iC-oux"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="WebView" destination="P7K-Dq-foO" id="Ohf-LV-mST"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="-1014.2428785607198"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="Qok-ZQ-hTX">
+            <objects>
+                <viewController id="Yqw-2H-u1s" customClass="ViewController2" customModule="Webview" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ihh-tp-3Mw"/>
+                        <viewControllerLayoutGuide type="bottom" id="YcP-Ug-sNY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gel-SC-tak">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVw-LC-aUn">
+                                <frame key="frameInset" minX="166" minY="1" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAj-M9-RwH">
+                                <frame key="frameInset" minY="20" width="320" height="548"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uAj-M9-RwH" secondAttribute="height" multiplier="375:667" id="M58-de-JPI"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uAj-M9-RwH" firstAttribute="leading" secondItem="gel-SC-tak" secondAttribute="leading" id="3fn-fg-mO5"/>
+                            <constraint firstItem="uAj-M9-RwH" firstAttribute="top" secondItem="YVw-LC-aUn" secondAttribute="bottom" constant="8" symbolic="YES" id="HJY-Kl-q3F"/>
+                            <constraint firstItem="uAj-M9-RwH" firstAttribute="width" secondItem="uAj-M9-RwH" secondAttribute="height" multiplier="375:667" id="OQ5-cq-jSh"/>
+                            <constraint firstItem="uAj-M9-RwH" firstAttribute="width" secondItem="uAj-M9-RwH" secondAttribute="height" multiplier="375:667" id="Toi-AX-rbX"/>
+                            <constraint firstItem="YVw-LC-aUn" firstAttribute="top" secondItem="Ihh-tp-3Mw" secondAttribute="bottom" constant="1" id="TtJ-F3-rmv"/>
+                            <constraint firstItem="YVw-LC-aUn" firstAttribute="centerX" secondItem="gel-SC-tak" secondAttribute="centerX" id="iAi-9a-hBi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uAj-M9-RwH" secondAttribute="trailing" constant="-6" id="mCP-ub-Hz3"/>
+                            <constraint firstItem="uAj-M9-RwH" firstAttribute="bottom" secondItem="YcP-Ug-sNY" secondAttribute="top" id="tke-y9-zCX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XHj-xx-pri"/>
+                    <connections>
+                        <outlet property="WebView2" destination="uAj-M9-RwH" id="MvV-iB-sUi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NXZ-VW-1uV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1698.75" y="-1015.1408450704225"/>
+        </scene>
+    </scenes>
+</document>
